@@ -20,4 +20,9 @@ const restaurant = {
 };
 
 - Qual è il metodo migliore per clonare l’oggetto chef, e perché?
+
+  Per clonare l'oggetto chef si può usare l'operatore spread, però la funzione makeBurger la copia solo per riferimento
+
 - Qual è il metodo migliore per clonare l’oggetto restaurant, e perché?
+
+  Per clonare l'oggetto restaurant si può usare l'operatore structuredClone, usato per oggetti complessi
