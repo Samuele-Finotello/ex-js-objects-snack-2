@@ -19,3 +19,5 @@ const secondBurger = structuredClone(hamburger);
 const thirdBurger = structuredClone(hamburger);
 
 - Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+
+  Sono state create 2 copie dell'oggetto della variabile hamburger, quindi in tutto sono stati creati 3 oggetti
