@@ -28,4 +28,12 @@ console.log(hamburger.maker.restaurant.name); // ?
 console.log(secondBurger.maker.restaurant.name); // ?
 
 - Senza lanciare il codice, riesci a prevedere cosa viene stampato in console?
+
+  console.log(hamburger.maker.name); // Chef Hyur
+  console.log(secondBurger.maker.name); // Chef Hyur
+  console.log(hamburger.maker.restaurant.name); // Hyur's II
+  console.log(secondBurger.maker.restaurant.name); // Hyur's II
+
 - Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
+
+  Sono stati creati in memoria 3 oggetti, il primo è hamburger, il secondo è newRestaurant che prende solo l'oggetto restaurant dentro hamburger e il terzo è secondBurger che copia come indipendente solo il primo livello di hamburger perché è stato fatto con lo spread
