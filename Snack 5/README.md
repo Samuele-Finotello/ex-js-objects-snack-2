@@ -36,4 +36,4 @@ console.log(secondBurger.maker.restaurant.name); // ?
 
 - Quanti oggetti sono stati creati in memoria durante l'esecuzione di questo codice?
 
-  Sono stati creati in memoria 3 oggetti, il primo è hamburger, il secondo è newRestaurant che prende solo l'oggetto restaurant dentro hamburger e il terzo è secondBurger che copia come indipendente solo il primo livello di hamburger perché è stato fatto con lo spread
+  Sono stati creati in memoria in totale 5 oggetti, il primo è hamburger, il secondo è l'oggetto maker al suo interno, il terzo è restaurant che si trova all'interno di maker, il quarto è newRestaurant che prende solo l'oggetto restaurant dentro hamburger e maker e il quinto è secondBurger che copia come indipendente solo il primo livello di hamburger perché è stato fatto con lo spread

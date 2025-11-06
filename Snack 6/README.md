@@ -25,4 +25,15 @@ const chef = {
 
 - Qual è il metodo migliore per clonare l’oggetto chef, e perché?
 
-  Il modo migliore per clonare l'oggetto chef è con lo spread, perché con solo la reference non puoi modificare indipendentemente nulla, invece con JSON.parse(JSON.stringify()) e con structuredClone() non si possono copiare le funzioni, quindi il migliore è lo spread con cui almeno il primo livello si può modificare indipendentemente
+  Il modo migliore per clonare l'oggetto chef è con lo spread, perché con solo la reference non puoi modificare indipendentemente nulla, invece con JSON.parse(JSON.stringify()) e con structuredClone() non si possono copiare le funzioni, quindi il migliore è lo spread con cui almeno il primo livello si può modificare indipendentemente.
+  Per rendere indipendente ogni oggetto di chef, bisogna usare lo spread più volte:
+  
+  const spreadChef = {
+    ...chef,
+    restaurant: {
+        ...chef.restaurant,
+        address: {
+            ...chef.restaurant.address
+        }
+    }
+  }
